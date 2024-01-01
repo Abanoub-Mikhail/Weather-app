@@ -1,0 +1,159 @@
+body {
+  background-image: url("../image/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin-bottom: 0 !important;
+}
+
+.timeDate {
+  font-weight: 800;
+  background-image: url("../image/bg2.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 20px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.search  {
+  position: relative;
+}
+input::placeholder{
+  font-size: .9375rem;
+}
+.row {
+  height: 87%;
+  
+}
+
+.time {
+  text-shadow: 1px 1px 1px black;
+}
+
+
+.today-weather {
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  box-shadow: 1px 1px 10px black;
+}
+.search button {
+  position: absolute;
+  right: -21px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.weather {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255 , 0.9);
+  padding: 20px;
+}
+
+.weather .today-weather {
+  background-image: url("../image/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: blur(.625rem);
+}
+
+.weather header p {
+  font-size: .9375rem;
+}
+
+.weather .city-heat h4 {
+  position: relative;
+  font-size: 3.125rem;
+}
+.weather .city-heat h4 span {
+  position: absolute;
+  font-size: 1.5625rem;
+  top: 5px;
+}
+
+p.error {
+  display: none;
+}
+
+.days {
+  box-shadow: 1px 1px 10px rebeccapurple;
+  background-image: url("../image/bg.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  height: 100%;
+}
+
+.days header p {
+  font-size: .9375rem;
+}
+
+.weather-info {
+  font-size: .9375rem;
+}
+
+.days h2 {
+  font-size: 1.125rem;
+}
+.days .nextDayDate {
+  font-size: 20px;
+}
+
+.days .city-heat h4 {
+  font-size: 1.875rem;
+}
+.days .city-heat h4 span {
+  font-size: .9375rem;
+}
+
+.days footer {
+  font-size: .75rem;
+}
+
+.days .logo {
+  width: 60%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  section {
+    padding-top: 20px;
+    height: 100%;
+  }
+  .container {
+    height: auto;
+  }
+
+  .days {
+    min-height: 100%;
+  }
+  .days footer {
+    font-size: .9375rem;
+  }
+  .timeDate {
+    width: 100%;
+  }
+
+}
